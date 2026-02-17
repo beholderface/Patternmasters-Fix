@@ -11,7 +11,7 @@ authors = "beholderface"
 description = '''
 A simple mod that makes Patternmaster's Purification stop erroring when used on non-static patterns.
 '''
-#logoFile = ""
+logoFile = "icon.png"
 
 [[dependencies.patternmasters_fix]]
 modId = "forge"
