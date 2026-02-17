@@ -10,4 +10,10 @@ dependencies {
 
     // Architectury API. This is optional, and you can comment it out if you don't need it.
     modImplementation "dev.architectury:architectury:$rootProject.architectury_api_version"
+
+    modCompileOnly "at.petra-k.paucal:paucal-common-$minecraftVersion:$paucalVersion"
+    modCompileOnly "at.petra-k.hexcasting:hexcasting-fabric-$minecraftVersion:$hexcastingVersion"
+    modCompileOnly "vazkii.patchouli:Patchouli-xplat:$minecraftVersion-$patchouliVersion"
+    //modImplementation(annotationProcessor("com.github.llamalad7.mixinextras:mixinextras-common:${mixinExtrasVersion}"))
+    modImplementation("ram.talia.moreiotas:moreiotas-fabric-${minecraftVersion}:${moreiotasVersion}") { transitive false }
 }

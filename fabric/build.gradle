@@ -35,6 +35,17 @@ dependencies {
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
+
+    modImplementation("at.petra-k.hexcasting:hexcasting-fabric-${minecraftVersion}:${hexcastingVersion}") {
+        // If not excluded here, calls a nonexistent method and crashes the dev client
+        exclude module: "phosphor"
+    }
+    modRuntimeOnly "dev.onyxstudios.cardinal-components-api:cardinal-components-api:${cardinalComponentsVersion}"
+
+    modImplementation "at.petra-k.paucal:paucal-fabric-${minecraftVersion}:${paucalVersion}"
+    modImplementation "vazkii.patchouli:Patchouli:${minecraftVersion}-${patchouliVersion}-FABRIC"
+    modImplementation("ram.talia.moreiotas:moreiotas-fabric-${minecraftVersion}:${moreiotasVersion}") { transitive false}
+
 }
 
 processResources {

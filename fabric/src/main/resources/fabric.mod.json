@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "id": "patternmasters-fix",
+  "id": "patternmasters_fix",
   "version": "${version}",
   "name": "Patternmaster's Fix",
   "description": "A simple mod that makes Patternmaster's Purification stop erroring when used on non-static patterns.",
   "authors": [
-    "Me!"
+    "beholderface"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/beholderface/Patternmasters-Fix",
+    "sources": "https://github.com/beholderface/Patternmasters-Fix"
   },
   "license": "MIT",
   "icon": "icon.png",
@@ -26,11 +26,12 @@
     "patternmasters-fix.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.18.4",
+    "fabricloader": ">=0.16.0",
     "minecraft": "~1.20.1",
     "java": ">=17",
     "architectury": ">=9.2.14",
     "fabric-api": "*",
-    "moreiotas": ""
+    "hexcasting": ">=0.11.3",
+    "moreiotas": ">=0.1.1"
   }
 }

@@ -1,10 +1,10 @@
 modLoader = "javafml"
 loaderVersion = "[47,)"
-#issueTrackerURL = ""
+issueTrackerURL = "https://github.com/beholderface/Patternmasters-Fix/issues"
 license = "MIT"
 
 [[mods]]
-modId = "patternmasters-fix"
+modId = "patternmasters_fix"
 version = "${version}"
 displayName = "Patternmaster's Fix"
 authors = "beholderface"
@@ -13,23 +13,37 @@ A simple mod that makes Patternmaster's Purification stop erroring when used on 
 '''
 #logoFile = ""
 
-[[dependencies.patternmasters-fix]]
+[[dependencies.patternmasters_fix]]
 modId = "forge"
 mandatory = true
 versionRange = "[47,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.patternmasters-fix]]
+[[dependencies.patternmasters_fix]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.20.1,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.patternmasters-fix]]
+[[dependencies.patternmasters_fix]]
 modId = "architectury"
 mandatory = true
 versionRange = "[9.2.14,)"
 ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.patternmasters_fix]]
+modId = "hexcasting"
+mandatory = true
+versionRange = "[0.11.2,)"
+ordering = "BEFORE"
+side = "BOTH"
+
+[[dependencies.patternmasters_fix]]
+modId = "moreiotas"
+mandatory = true
+versionRange = "[0.1.1,)"
+ordering = "BEFORE"
 side = "BOTH"
